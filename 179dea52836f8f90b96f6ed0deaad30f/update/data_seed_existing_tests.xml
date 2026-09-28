@@ -1,0 +1,698 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+
+    <!--
+    ══════════════════════════════════════════════════════════════════
+    BACK-TEST SEED DATA
+    Source: C:\...\PlayWright project (existing tests + step definitions)
+    Covers:
+      - 1 Environment  (IBM SG Demo4 — from NowConfig.env)
+      - 1 PW Config    (from playwright.config.ts + cucumber.config.js)
+      - 3 Features     (now-assist-skills, incident-management, sow)
+      - 6 User Stories
+      - 6 Scenarios
+      - Scenario Steps for each scenario
+      - 9 Gherkin Step Library records
+    ══════════════════════════════════════════════════════════════════
+    -->
+
+    <!-- ════════════════════════════════════════════════════
+         ENVIRONMENT
+         Source: NowConfig.env
+         ════════════════════════════════════════════════════ -->
+
+    <x_146833_playwri_0_pw_environment action="INSERT_OR_UPDATE">
+        <sys_id>seed0001000000000000000000000001</sys_id>
+        <name>IBM SG Demo4</name>
+        <instance_url>https://ibmsingaporepteltdemo4.service-now.com</instance_url>
+        <username>srinivas.anil.kumar.varanasi@ibm.com</username>
+        <!-- password intentionally omitted — set manually in the instance -->
+        <password/>
+        <workspace_path>/now/sow/home</workspace_path>
+        <env_type>dev</env_type>
+        <is_active>true</is_active>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-28 03:00:00</sys_created_on>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-28 03:00:00</sys_updated_on>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_update_name>x_146833_playwri_0_pw_environment_seed_ibm_sg_demo4</sys_update_name>
+    </x_146833_playwri_0_pw_environment>
+
+
+    <!-- ════════════════════════════════════════════════════
+         PW CONFIG
+         Source: playwright.config.ts + cucumber.config.js
+         ════════════════════════════════════════════════════ -->
+
+    <x_146833_playwri_0_pw_config action="INSERT_OR_UPDATE">
+        <sys_id>seed0002000000000000000000000001</sys_id>
+        <name>Demo4 — Default</name>
+        <environment display_value="IBM SG Demo4">seed0001000000000000000000000001</environment>
+        <timeout_seconds>90</timeout_seconds>
+        <workers>1</workers>
+        <retries>0</retries>
+        <headless>false</headless>
+        <browser_channel>chrome</browser_channel>
+        <report_format>html</report_format>
+        <features_path>features/**/*.feature</features_path>
+        <steps_path>step-definitions/**/*.ts</steps_path>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-28 03:00:00</sys_created_on>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-28 03:00:00</sys_updated_on>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_update_name>x_146833_playwri_0_pw_config_seed_demo4_default</sys_update_name>
+    </x_146833_playwri_0_pw_config>
+
+
+    <!-- ════════════════════════════════════════════════════
+         GHERKIN STEP LIBRARY
+         Source: step-definitions/now-assist-skills.steps.ts
+         ════════════════════════════════════════════════════ -->
+
+    <!-- 1. Given I am logged in to ServiceNow -->
+    <x_146833_playwri_0_gerkin_steps action="INSERT_OR_UPDATE">
+        <sys_id>seed0009000000000000000000000001</sys_id>
+        <step_pattern>I am logged in to ServiceNow</step_pattern>
+        <keyword>Given</keyword>
+        <step_definition_file>step-definitions/now-assist-skills.steps.ts</step_definition_file>
+        <page_object>hooks.ts (BeforeAll — storageState injection)</page_object>
+        <description>&lt;p&gt;No-op step. Documented intent only. Authentication is handled by the BeforeAll hook in hooks.ts which injects storageState into every scenario context.&lt;/p&gt;</description>
+        <is_implemented>true</is_implemented>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-28 03:00:00</sys_created_on>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-28 03:00:00</sys_updated_on>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_update_name>x_146833_playwri_0_gerkin_steps_seed_logged_in</sys_update_name>
+    </x_146833_playwri_0_gerkin_steps>
+
+    <!-- 2. Given I am on the Next Experience home page -->
+    <x_146833_playwri_0_gerkin_steps action="INSERT_OR_UPDATE">
+        <sys_id>seed0009000000000000000000000002</sys_id>
+        <step_pattern>I am on the Next Experience home page</step_pattern>
+        <keyword>Given</keyword>
+        <step_definition_file>step-definitions/now-assist-skills.steps.ts</step_definition_file>
+        <page_object>NavigationPage</page_object>
+        <description>&lt;p&gt;Calls &lt;code&gt;NavigationPage.goToHome(BASE_URL)&lt;/code&gt; — navigates to &lt;code&gt;/now/nav/ui/home&lt;/code&gt; with waitUntil: domcontentloaded.&lt;/p&gt;</description>
+        <is_implemented>true</is_implemented>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-28 03:00:00</sys_created_on>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-28 03:00:00</sys_updated_on>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_update_name>x_146833_playwri_0_gerkin_steps_seed_home_page</sys_update_name>
+    </x_146833_playwri_0_gerkin_steps>
+
+    <!-- 3. When I open the Now Assist skill picker -->
+    <x_146833_playwri_0_gerkin_steps action="INSERT_OR_UPDATE">
+        <sys_id>seed0009000000000000000000000003</sys_id>
+        <step_pattern>I open the Now Assist skill picker</step_pattern>
+        <keyword>When</keyword>
+        <step_definition_file>step-definitions/now-assist-skills.steps.ts</step_definition_file>
+        <page_object>NowAssistPage</page_object>
+        <description>&lt;p&gt;Calls &lt;code&gt;NowAssistPage.openSkillPicker()&lt;/code&gt; — waits for &lt;code&gt;now-chat-window&lt;/code&gt; to be visible (60s timeout). Stores the NowAssistPage instance on the Cucumber World for use by Then steps.&lt;/p&gt;</description>
+        <is_implemented>true</is_implemented>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-28 03:00:00</sys_created_on>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-28 03:00:00</sys_updated_on>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_update_name>x_146833_playwri_0_gerkin_steps_seed_open_skill_picker</sys_update_name>
+    </x_146833_playwri_0_gerkin_steps>
+
+    <!-- 4. Then I should see at least 1 skill available -->
+    <x_146833_playwri_0_gerkin_steps action="INSERT_OR_UPDATE">
+        <sys_id>seed0009000000000000000000000004</sys_id>
+        <step_pattern>I should see at least 1 skill available</step_pattern>
+        <keyword>Then</keyword>
+        <step_definition_file>step-definitions/now-assist-skills.steps.ts</step_definition_file>
+        <page_object>NowAssistPage</page_object>
+        <description>&lt;p&gt;Calls &lt;code&gt;NowAssistPage.getVisibleSkills()&lt;/code&gt; and asserts &lt;code&gt;skills.length &gt; 0&lt;/code&gt;. Stores skills on World for reuse.&lt;/p&gt;</description>
+        <is_implemented>true</is_implemented>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-28 03:00:00</sys_created_on>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-28 03:00:00</sys_updated_on>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_update_name>x_146833_playwri_0_gerkin_steps_seed_see_skills</sys_update_name>
+    </x_146833_playwri_0_gerkin_steps>
+
+    <!-- 5. Then the available skills should be written to a file -->
+    <x_146833_playwri_0_gerkin_steps action="INSERT_OR_UPDATE">
+        <sys_id>seed0009000000000000000000000005</sys_id>
+        <step_pattern>the available skills should be written to a file</step_pattern>
+        <keyword>Then</keyword>
+        <step_definition_file>step-definitions/now-assist-skills.steps.ts</step_definition_file>
+        <page_object>NowAssistPage</page_object>
+        <description>&lt;p&gt;Calls &lt;code&gt;NowAssistPage.writeSkillsToFile(skills)&lt;/code&gt; — writes to &lt;code&gt;output/now-assist-skills.txt&lt;/code&gt; with timestamp and instance URL.&lt;/p&gt;</description>
+        <is_implemented>true</is_implemented>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-28 03:00:00</sys_created_on>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-28 03:00:00</sys_updated_on>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_update_name>x_146833_playwri_0_gerkin_steps_seed_skills_to_file</sys_update_name>
+    </x_146833_playwri_0_gerkin_steps>
+
+    <!-- 6. Then the skill {string} should be visible -->
+    <x_146833_playwri_0_gerkin_steps action="INSERT_OR_UPDATE">
+        <sys_id>seed0009000000000000000000000006</sys_id>
+        <step_pattern>the skill {string} should be visible</step_pattern>
+        <keyword>Then</keyword>
+        <step_definition_file>step-definitions/now-assist-skills.steps.ts</step_definition_file>
+        <page_object>NowAssistPage</page_object>
+        <description>&lt;p&gt;Asserts &lt;code&gt;page.getByRole('button', {name: skillName}).toBeVisible()&lt;/code&gt; with 15s timeout. Parameter: &lt;code&gt;{string}&lt;/code&gt; = the skill label e.g. "Generate resolution notes".&lt;/p&gt;</description>
+        <is_implemented>true</is_implemented>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-28 03:00:00</sys_created_on>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-28 03:00:00</sys_updated_on>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_update_name>x_146833_playwri_0_gerkin_steps_seed_skill_visible</sys_update_name>
+    </x_146833_playwri_0_gerkin_steps>
+
+    <!-- 7. When I navigate to the Workspaces menu -->
+    <x_146833_playwri_0_gerkin_steps action="INSERT_OR_UPDATE">
+        <sys_id>seed0009000000000000000000000007</sys_id>
+        <step_pattern>I open the Workspaces menu</step_pattern>
+        <keyword>When</keyword>
+        <step_definition_file>step-definitions/(pending — maps to sow.spec.ts)</step_definition_file>
+        <page_object>NavigationPage</page_object>
+        <description>&lt;p&gt;Calls &lt;code&gt;NavigationPage.openWorkspacesMenu()&lt;/code&gt; — clicks menuitem "Workspaces" in the Next Experience nav bar.&lt;/p&gt;</description>
+        <is_implemented>false</is_implemented>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-28 03:00:00</sys_created_on>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-28 03:00:00</sys_updated_on>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_update_name>x_146833_playwri_0_gerkin_steps_seed_open_workspaces</sys_update_name>
+    </x_146833_playwri_0_gerkin_steps>
+
+    <!-- 8. When I open the Service Operations Workspace -->
+    <x_146833_playwri_0_gerkin_steps action="INSERT_OR_UPDATE">
+        <sys_id>seed0009000000000000000000000008</sys_id>
+        <step_pattern>I open the Service Operations Workspace</step_pattern>
+        <keyword>When</keyword>
+        <step_definition_file>step-definitions/(pending — maps to sow.spec.ts)</step_definition_file>
+        <page_object>SOWPage</page_object>
+        <description>&lt;p&gt;Calls &lt;code&gt;SOWPage.open()&lt;/code&gt; — clicks the SOW link with force:true (bypasses collapsible overlay). Waits for URL /now/sow/ with 60s timeout.&lt;/p&gt;</description>
+        <is_implemented>false</is_implemented>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-28 03:00:00</sys_created_on>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-28 03:00:00</sys_updated_on>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_update_name>x_146833_playwri_0_gerkin_steps_seed_open_sow</sys_update_name>
+    </x_146833_playwri_0_gerkin_steps>
+
+    <!-- 9. Then the SOW should be loaded -->
+    <x_146833_playwri_0_gerkin_steps action="INSERT_OR_UPDATE">
+        <sys_id>seed0009000000000000000000000009</sys_id>
+        <step_pattern>the Service Operations Workspace should be loaded</step_pattern>
+        <keyword>Then</keyword>
+        <step_definition_file>step-definitions/(pending — maps to sow.spec.ts)</step_definition_file>
+        <page_object>SOWPage</page_object>
+        <description>&lt;p&gt;Asserts &lt;code&gt;page.toHaveURL(/\/now\/sow\//)&lt;/code&gt;. Confirms SOW navigation succeeded.&lt;/p&gt;</description>
+        <is_implemented>false</is_implemented>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-28 03:00:00</sys_created_on>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-28 03:00:00</sys_updated_on>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_update_name>x_146833_playwri_0_gerkin_steps_seed_sow_loaded</sys_update_name>
+    </x_146833_playwri_0_gerkin_steps>
+
+
+    <!-- ════════════════════════════════════════════════════
+         FEATURE 1: Now Assist Skills
+         Source: features/now-assist-skills.feature + tests/now-assist-skills.spec.ts
+         ════════════════════════════════════════════════════ -->
+
+    <x_146833_playwri_0_pw_feature action="INSERT_OR_UPDATE">
+        <sys_id>seed0003000000000000000000000001</sys_id>
+        <title>Now Assist Skills Panel</title>
+        <description>Verify the Now Assist skills panel opens and lists expected AI-powered skills.</description>
+        <tags>@now-assist</tags>
+        <file_path>features/now-assist-skills.feature</file_path>
+        <active>true</active>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-28 03:00:00</sys_created_on>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-28 03:00:00</sys_updated_on>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_update_name>x_146833_playwri_0_pw_feature_seed_now_assist</sys_update_name>
+    </x_146833_playwri_0_pw_feature>
+
+    <!-- Story 1.1 -->
+    <x_146833_playwri_0_pw_story action="INSERT_OR_UPDATE">
+        <sys_id>seed0004000000000000000000000001</sys_id>
+        <feature display_value="Now Assist Skills Panel">seed0003000000000000000000000001</feature>
+        <title>View available Now Assist skills</title>
+        <as_a>a ServiceNow user</as_a>
+        <i_want>to open the Now Assist panel</i_want>
+        <so_that>I can see what AI-powered skills are available to me</so_that>
+        <priority>high</priority>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-28 03:00:00</sys_created_on>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-28 03:00:00</sys_updated_on>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_update_name>x_146833_playwri_0_pw_story_seed_view_skills</sys_update_name>
+    </x_146833_playwri_0_pw_story>
+
+    <!-- Scenario 1.1 — View all available skills -->
+    <x_146833_playwri_0_pw_scenario action="INSERT_OR_UPDATE">
+        <sys_id>seed0005000000000000000000000001</sys_id>
+        <story display_value="View available Now Assist skills">seed0004000000000000000000000001</story>
+        <feature display_value="Now Assist Skills Panel">seed0003000000000000000000000001</feature>
+        <title>View all available Now Assist skills</title>
+        <type>scenario</type>
+        <tags>@now-assist</tags>
+        <background_steps>&lt;p&gt;Given I am logged in to ServiceNow&lt;br/&gt;And I am on the Next Experience home page&lt;/p&gt;</background_steps>
+        <order>1</order>
+        <active>true</active>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-28 03:00:00</sys_created_on>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-28 03:00:00</sys_updated_on>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_update_name>x_146833_playwri_0_pw_scenario_seed_view_all_skills</sys_update_name>
+    </x_146833_playwri_0_pw_scenario>
+
+    <!-- Steps for Scenario 1.1 -->
+    <x_146833_playwri_0_pw_scenario_step action="INSERT_OR_UPDATE">
+        <sys_id>seed0006000000000000000000000001</sys_id>
+        <scenario display_value="View all available Now Assist skills">seed0005000000000000000000000001</scenario>
+        <order>1</order><keyword>When</keyword>
+        <step_text>I open the Now Assist skill picker</step_text>
+        <step_definition_ref display_value="I open the Now Assist skill picker">seed0009000000000000000000000003</step_definition_ref>
+        <sys_created_by>admin</sys_created_by><sys_created_on>2026-09-28 03:00:00</sys_created_on>
+        <sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-28 03:00:00</sys_updated_on>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_update_name>x_146833_playwri_0_pw_scenario_step_seed_001_001</sys_update_name>
+    </x_146833_playwri_0_pw_scenario_step>
+    <x_146833_playwri_0_pw_scenario_step action="INSERT_OR_UPDATE">
+        <sys_id>seed0006000000000000000000000002</sys_id>
+        <scenario display_value="View all available Now Assist skills">seed0005000000000000000000000001</scenario>
+        <order>2</order><keyword>Then</keyword>
+        <step_text>I should see at least 1 skill available</step_text>
+        <step_definition_ref display_value="I should see at least 1 skill available">seed0009000000000000000000000004</step_definition_ref>
+        <sys_created_by>admin</sys_created_by><sys_created_on>2026-09-28 03:00:00</sys_created_on>
+        <sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-28 03:00:00</sys_updated_on>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_update_name>x_146833_playwri_0_pw_scenario_step_seed_001_002</sys_update_name>
+    </x_146833_playwri_0_pw_scenario_step>
+    <x_146833_playwri_0_pw_scenario_step action="INSERT_OR_UPDATE">
+        <sys_id>seed0006000000000000000000000003</sys_id>
+        <scenario display_value="View all available Now Assist skills">seed0005000000000000000000000001</scenario>
+        <order>3</order><keyword>And</keyword>
+        <step_text>the available skills should be written to a file</step_text>
+        <step_definition_ref display_value="the available skills should be written to a file">seed0009000000000000000000000005</step_definition_ref>
+        <sys_created_by>admin</sys_created_by><sys_created_on>2026-09-28 03:00:00</sys_created_on>
+        <sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-28 03:00:00</sys_updated_on>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_update_name>x_146833_playwri_0_pw_scenario_step_seed_001_003</sys_update_name>
+    </x_146833_playwri_0_pw_scenario_step>
+
+    <!-- Scenario 1.2 — Verify specific skills -->
+    <x_146833_playwri_0_pw_scenario action="INSERT_OR_UPDATE">
+        <sys_id>seed0005000000000000000000000002</sys_id>
+        <story display_value="View available Now Assist skills">seed0004000000000000000000000001</story>
+        <feature display_value="Now Assist Skills Panel">seed0003000000000000000000000001</feature>
+        <title>Verify specific skills are present</title>
+        <type>scenario</type>
+        <tags>@now-assist</tags>
+        <background_steps>&lt;p&gt;Given I am logged in to ServiceNow&lt;br/&gt;And I am on the Next Experience home page&lt;/p&gt;</background_steps>
+        <order>2</order>
+        <active>true</active>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-28 03:00:00</sys_created_on>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-28 03:00:00</sys_updated_on>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_update_name>x_146833_playwri_0_pw_scenario_seed_verify_specific_skills</sys_update_name>
+    </x_146833_playwri_0_pw_scenario>
+
+    <!-- Steps for Scenario 1.2 -->
+    <x_146833_playwri_0_pw_scenario_step action="INSERT_OR_UPDATE">
+        <sys_id>seed0006000000000000000000000004</sys_id>
+        <scenario display_value="Verify specific skills are present">seed0005000000000000000000000002</scenario>
+        <order>1</order><keyword>When</keyword>
+        <step_text>I open the Now Assist skill picker</step_text>
+        <step_definition_ref display_value="I open the Now Assist skill picker">seed0009000000000000000000000003</step_definition_ref>
+        <sys_created_by>admin</sys_created_by><sys_created_on>2026-09-28 03:00:00</sys_created_on>
+        <sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-28 03:00:00</sys_updated_on>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_update_name>x_146833_playwri_0_pw_scenario_step_seed_002_001</sys_update_name>
+    </x_146833_playwri_0_pw_scenario_step>
+    <x_146833_playwri_0_pw_scenario_step action="INSERT_OR_UPDATE">
+        <sys_id>seed0006000000000000000000000005</sys_id>
+        <scenario display_value="Verify specific skills are present">seed0005000000000000000000000002</scenario>
+        <order>2</order><keyword>Then</keyword>
+        <step_text>the skill "Generate resolution notes" should be visible</step_text>
+        <step_definition_ref display_value="the skill {string} should be visible">seed0009000000000000000000000006</step_definition_ref>
+        <sys_created_by>admin</sys_created_by><sys_created_on>2026-09-28 03:00:00</sys_created_on>
+        <sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-28 03:00:00</sys_updated_on>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_update_name>x_146833_playwri_0_pw_scenario_step_seed_002_002</sys_update_name>
+    </x_146833_playwri_0_pw_scenario_step>
+    <x_146833_playwri_0_pw_scenario_step action="INSERT_OR_UPDATE">
+        <sys_id>seed0006000000000000000000000006</sys_id>
+        <scenario display_value="Verify specific skills are present">seed0005000000000000000000000002</scenario>
+        <order>3</order><keyword>And</keyword>
+        <step_text>the skill "Summarize a record" should be visible</step_text>
+        <step_definition_ref display_value="the skill {string} should be visible">seed0009000000000000000000000006</step_definition_ref>
+        <sys_created_by>admin</sys_created_by><sys_created_on>2026-09-28 03:00:00</sys_created_on>
+        <sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-28 03:00:00</sys_updated_on>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_update_name>x_146833_playwri_0_pw_scenario_step_seed_002_003</sys_update_name>
+    </x_146833_playwri_0_pw_scenario_step>
+    <x_146833_playwri_0_pw_scenario_step action="INSERT_OR_UPDATE">
+        <sys_id>seed0006000000000000000000000007</sys_id>
+        <scenario display_value="Verify specific skills are present">seed0005000000000000000000000002</scenario>
+        <order>4</order><keyword>And</keyword>
+        <step_text>the skill "Incident assist" should be visible</step_text>
+        <step_definition_ref display_value="the skill {string} should be visible">seed0009000000000000000000000006</step_definition_ref>
+        <sys_created_by>admin</sys_created_by><sys_created_on>2026-09-28 03:00:00</sys_created_on>
+        <sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-28 03:00:00</sys_updated_on>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_update_name>x_146833_playwri_0_pw_scenario_step_seed_002_004</sys_update_name>
+    </x_146833_playwri_0_pw_scenario_step>
+
+
+    <!-- ════════════════════════════════════════════════════
+         FEATURE 2: Incident Management
+         Source: tests/incident-test.spec.ts
+         ════════════════════════════════════════════════════ -->
+
+    <x_146833_playwri_0_pw_feature action="INSERT_OR_UPDATE">
+        <sys_id>seed0003000000000000000000000002</sys_id>
+        <title>Incident Management</title>
+        <description>Create and verify Incident records via the ServiceNow classic UI form.</description>
+        <tags>@incident</tags>
+        <file_path>features/incident-management.feature</file_path>
+        <active>true</active>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-28 03:00:00</sys_created_on>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-28 03:00:00</sys_updated_on>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_update_name>x_146833_playwri_0_pw_feature_seed_incident</sys_update_name>
+    </x_146833_playwri_0_pw_feature>
+
+    <!-- Story 2.1 -->
+    <x_146833_playwri_0_pw_story action="INSERT_OR_UPDATE">
+        <sys_id>seed0004000000000000000000000002</sys_id>
+        <feature display_value="Incident Management">seed0003000000000000000000000002</feature>
+        <title>Create a new Incident record</title>
+        <as_a>a ServiceNow agent</as_a>
+        <i_want>to create a new Incident via the classic UI form</i_want>
+        <so_that>I can verify the record is saved with the correct field values</so_that>
+        <priority>high</priority>
+        <acceptance_criteria>&lt;ul&gt;&lt;li&gt;URL no longer contains sys_id=-1 after submit&lt;/li&gt;&lt;li&gt;Short Description persists on the saved form&lt;/li&gt;&lt;li&gt;Urgency value persists as 2 (Medium)&lt;/li&gt;&lt;/ul&gt;</acceptance_criteria>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-28 03:00:00</sys_created_on>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-28 03:00:00</sys_updated_on>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_update_name>x_146833_playwri_0_pw_story_seed_create_incident</sys_update_name>
+    </x_146833_playwri_0_pw_story>
+
+    <!-- Scenario 2.1 -->
+    <x_146833_playwri_0_pw_scenario action="INSERT_OR_UPDATE">
+        <sys_id>seed0005000000000000000000000003</sys_id>
+        <story display_value="Create a new Incident record">seed0004000000000000000000000002</story>
+        <feature display_value="Incident Management">seed0003000000000000000000000002</feature>
+        <title>Create a new Incident and verify submission</title>
+        <type>scenario</type>
+        <tags>@incident</tags>
+        <order>1</order>
+        <active>true</active>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-28 03:00:00</sys_created_on>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-28 03:00:00</sys_updated_on>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_update_name>x_146833_playwri_0_pw_scenario_seed_create_incident</sys_update_name>
+    </x_146833_playwri_0_pw_scenario>
+
+    <!-- Steps for Scenario 2.1 — mapped directly from incident-test.spec.ts -->
+    <x_146833_playwri_0_pw_scenario_step action="INSERT_OR_UPDATE">
+        <sys_id>seed0006000000000000000000000008</sys_id>
+        <scenario display_value="Create a new Incident and verify submission">seed0005000000000000000000000003</scenario>
+        <order>1</order><keyword>Given</keyword>
+        <step_text>I am logged in to ServiceNow</step_text>
+        <step_definition_ref display_value="I am logged in to ServiceNow">seed0009000000000000000000000001</step_definition_ref>
+        <sys_created_by>admin</sys_created_by><sys_created_on>2026-09-28 03:00:00</sys_created_on>
+        <sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-28 03:00:00</sys_updated_on>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_update_name>x_146833_playwri_0_pw_scenario_step_seed_003_001</sys_update_name>
+    </x_146833_playwri_0_pw_scenario_step>
+    <x_146833_playwri_0_pw_scenario_step action="INSERT_OR_UPDATE">
+        <sys_id>seed0006000000000000000000000009</sys_id>
+        <scenario display_value="Create a new Incident and verify submission">seed0005000000000000000000000003</scenario>
+        <order>2</order><keyword>When</keyword>
+        <step_text>I navigate to the new Incident form</step_text>
+        <sys_created_by>admin</sys_created_by><sys_created_on>2026-09-28 03:00:00</sys_created_on>
+        <sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-28 03:00:00</sys_updated_on>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_update_name>x_146833_playwri_0_pw_scenario_step_seed_003_002</sys_update_name>
+    </x_146833_playwri_0_pw_scenario_step>
+    <x_146833_playwri_0_pw_scenario_step action="INSERT_OR_UPDATE">
+        <sys_id>seed0006000000000000000000000010</sys_id>
+        <scenario display_value="Create a new Incident and verify submission">seed0005000000000000000000000003</scenario>
+        <order>3</order><keyword>And</keyword>
+        <step_text>I fill in Short Description with "Automated test — Playwright incident creation"</step_text>
+        <sys_created_by>admin</sys_created_by><sys_created_on>2026-09-28 03:00:00</sys_created_on>
+        <sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-28 03:00:00</sys_updated_on>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_update_name>x_146833_playwri_0_pw_scenario_step_seed_003_003</sys_update_name>
+    </x_146833_playwri_0_pw_scenario_step>
+    <x_146833_playwri_0_pw_scenario_step action="INSERT_OR_UPDATE">
+        <sys_id>seed0006000000000000000000000011</sys_id>
+        <scenario display_value="Create a new Incident and verify submission">seed0005000000000000000000000003</scenario>
+        <order>4</order><keyword>And</keyword>
+        <step_text>I set Urgency to "2" (Medium)</step_text>
+        <sys_created_by>admin</sys_created_by><sys_created_on>2026-09-28 03:00:00</sys_created_on>
+        <sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-28 03:00:00</sys_updated_on>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_update_name>x_146833_playwri_0_pw_scenario_step_seed_003_004</sys_update_name>
+    </x_146833_playwri_0_pw_scenario_step>
+    <x_146833_playwri_0_pw_scenario_step action="INSERT_OR_UPDATE">
+        <sys_id>seed0006000000000000000000000012</sys_id>
+        <scenario display_value="Create a new Incident and verify submission">seed0005000000000000000000000003</scenario>
+        <order>5</order><keyword>And</keyword>
+        <step_text>I submit the Incident form</step_text>
+        <sys_created_by>admin</sys_created_by><sys_created_on>2026-09-28 03:00:00</sys_created_on>
+        <sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-28 03:00:00</sys_updated_on>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_update_name>x_146833_playwri_0_pw_scenario_step_seed_003_005</sys_update_name>
+    </x_146833_playwri_0_pw_scenario_step>
+    <x_146833_playwri_0_pw_scenario_step action="INSERT_OR_UPDATE">
+        <sys_id>seed0006000000000000000000000013</sys_id>
+        <scenario display_value="Create a new Incident and verify submission">seed0005000000000000000000000003</scenario>
+        <order>6</order><keyword>Then</keyword>
+        <step_text>the URL should not contain sys_id=-1</step_text>
+        <sys_created_by>admin</sys_created_by><sys_created_on>2026-09-28 03:00:00</sys_created_on>
+        <sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-28 03:00:00</sys_updated_on>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_update_name>x_146833_playwri_0_pw_scenario_step_seed_003_006</sys_update_name>
+    </x_146833_playwri_0_pw_scenario_step>
+    <x_146833_playwri_0_pw_scenario_step action="INSERT_OR_UPDATE">
+        <sys_id>seed0006000000000000000000000014</sys_id>
+        <scenario display_value="Create a new Incident and verify submission">seed0005000000000000000000000003</scenario>
+        <order>7</order><keyword>And</keyword>
+        <step_text>the Short Description field should contain "Automated test — Playwright incident creation"</step_text>
+        <sys_created_by>admin</sys_created_by><sys_created_on>2026-09-28 03:00:00</sys_created_on>
+        <sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-28 03:00:00</sys_updated_on>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_update_name>x_146833_playwri_0_pw_scenario_step_seed_003_007</sys_update_name>
+    </x_146833_playwri_0_pw_scenario_step>
+    <x_146833_playwri_0_pw_scenario_step action="INSERT_OR_UPDATE">
+        <sys_id>seed0006000000000000000000000015</sys_id>
+        <scenario display_value="Create a new Incident and verify submission">seed0005000000000000000000000003</scenario>
+        <order>8</order><keyword>And</keyword>
+        <step_text>the Urgency field should have value "2"</step_text>
+        <sys_created_by>admin</sys_created_by><sys_created_on>2026-09-28 03:00:00</sys_created_on>
+        <sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-28 03:00:00</sys_updated_on>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_update_name>x_146833_playwri_0_pw_scenario_step_seed_003_008</sys_update_name>
+    </x_146833_playwri_0_pw_scenario_step>
+
+
+    <!-- ════════════════════════════════════════════════════
+         FEATURE 3: Service Operations Workspace
+         Source: tests/sow.spec.ts
+         ════════════════════════════════════════════════════ -->
+
+    <x_146833_playwri_0_pw_feature action="INSERT_OR_UPDATE">
+        <sys_id>seed0003000000000000000000000003</sys_id>
+        <title>Service Operations Workspace</title>
+        <description>Navigate to and verify the Service Operations Workspace (SOW) loads correctly.</description>
+        <tags>@sow</tags>
+        <file_path>features/sow.feature</file_path>
+        <active>true</active>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-28 03:00:00</sys_created_on>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-28 03:00:00</sys_updated_on>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_update_name>x_146833_playwri_0_pw_feature_seed_sow</sys_update_name>
+    </x_146833_playwri_0_pw_feature>
+
+    <!-- Story 3.1 -->
+    <x_146833_playwri_0_pw_story action="INSERT_OR_UPDATE">
+        <sys_id>seed0004000000000000000000000003</sys_id>
+        <feature display_value="Service Operations Workspace">seed0003000000000000000000000003</feature>
+        <title>Open the Service Operations Workspace</title>
+        <as_a>a ServiceNow operator</as_a>
+        <i_want>to navigate to the Service Operations Workspace</i_want>
+        <so_that>I can verify the workspace loads and downstream tests can start inside it</so_that>
+        <priority>medium</priority>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-28 03:00:00</sys_created_on>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-28 03:00:00</sys_updated_on>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_update_name>x_146833_playwri_0_pw_story_seed_open_sow</sys_update_name>
+    </x_146833_playwri_0_pw_story>
+
+    <!-- Scenario 3.1 -->
+    <x_146833_playwri_0_pw_scenario action="INSERT_OR_UPDATE">
+        <sys_id>seed0005000000000000000000000004</sys_id>
+        <story display_value="Open the Service Operations Workspace">seed0004000000000000000000000003</story>
+        <feature display_value="Service Operations Workspace">seed0003000000000000000000000003</feature>
+        <title>Navigate to and open the Service Operations Workspace</title>
+        <type>scenario</type>
+        <tags>@sow</tags>
+        <order>1</order>
+        <active>true</active>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-28 03:00:00</sys_created_on>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-28 03:00:00</sys_updated_on>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_update_name>x_146833_playwri_0_pw_scenario_seed_open_sow</sys_update_name>
+    </x_146833_playwri_0_pw_scenario>
+
+    <!-- Steps for Scenario 3.1 -->
+    <x_146833_playwri_0_pw_scenario_step action="INSERT_OR_UPDATE">
+        <sys_id>seed0006000000000000000000000016</sys_id>
+        <scenario display_value="Navigate to and open the Service Operations Workspace">seed0005000000000000000000000004</scenario>
+        <order>1</order><keyword>Given</keyword>
+        <step_text>I am logged in to ServiceNow</step_text>
+        <step_definition_ref display_value="I am logged in to ServiceNow">seed0009000000000000000000000001</step_definition_ref>
+        <sys_created_by>admin</sys_created_by><sys_created_on>2026-09-28 03:00:00</sys_created_on>
+        <sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-28 03:00:00</sys_updated_on>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_update_name>x_146833_playwri_0_pw_scenario_step_seed_004_001</sys_update_name>
+    </x_146833_playwri_0_pw_scenario_step>
+    <x_146833_playwri_0_pw_scenario_step action="INSERT_OR_UPDATE">
+        <sys_id>seed0006000000000000000000000017</sys_id>
+        <scenario display_value="Navigate to and open the Service Operations Workspace">seed0005000000000000000000000004</scenario>
+        <order>2</order><keyword>And</keyword>
+        <step_text>I am on the Next Experience home page</step_text>
+        <step_definition_ref display_value="I am on the Next Experience home page">seed0009000000000000000000000002</step_definition_ref>
+        <sys_created_by>admin</sys_created_by><sys_created_on>2026-09-28 03:00:00</sys_created_on>
+        <sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-28 03:00:00</sys_updated_on>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_update_name>x_146833_playwri_0_pw_scenario_step_seed_004_002</sys_update_name>
+    </x_146833_playwri_0_pw_scenario_step>
+    <x_146833_playwri_0_pw_scenario_step action="INSERT_OR_UPDATE">
+        <sys_id>seed0006000000000000000000000018</sys_id>
+        <scenario display_value="Navigate to and open the Service Operations Workspace">seed0005000000000000000000000004</scenario>
+        <order>3</order><keyword>When</keyword>
+        <step_text>I open the Workspaces menu</step_text>
+        <step_definition_ref display_value="I open the Workspaces menu">seed0009000000000000000000000007</step_definition_ref>
+        <sys_created_by>admin</sys_created_by><sys_created_on>2026-09-28 03:00:00</sys_created_on>
+        <sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-28 03:00:00</sys_updated_on>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_update_name>x_146833_playwri_0_pw_scenario_step_seed_004_003</sys_update_name>
+    </x_146833_playwri_0_pw_scenario_step>
+    <x_146833_playwri_0_pw_scenario_step action="INSERT_OR_UPDATE">
+        <sys_id>seed0006000000000000000000000019</sys_id>
+        <scenario display_value="Navigate to and open the Service Operations Workspace">seed0005000000000000000000000004</scenario>
+        <order>4</order><keyword>And</keyword>
+        <step_text>I open the Service Operations Workspace</step_text>
+        <step_definition_ref display_value="I open the Service Operations Workspace">seed0009000000000000000000000008</step_definition_ref>
+        <sys_created_by>admin</sys_created_by><sys_created_on>2026-09-28 03:00:00</sys_created_on>
+        <sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-28 03:00:00</sys_updated_on>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_update_name>x_146833_playwri_0_pw_scenario_step_seed_004_004</sys_update_name>
+    </x_146833_playwri_0_pw_scenario_step>
+    <x_146833_playwri_0_pw_scenario_step action="INSERT_OR_UPDATE">
+        <sys_id>seed0006000000000000000000000020</sys_id>
+        <scenario display_value="Navigate to and open the Service Operations Workspace">seed0005000000000000000000000004</scenario>
+        <order>5</order><keyword>Then</keyword>
+        <step_text>the Service Operations Workspace should be loaded</step_text>
+        <step_definition_ref display_value="the Service Operations Workspace should be loaded">seed0009000000000000000000000009</step_definition_ref>
+        <sys_created_by>admin</sys_created_by><sys_created_on>2026-09-28 03:00:00</sys_created_on>
+        <sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-28 03:00:00</sys_updated_on>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_update_name>x_146833_playwri_0_pw_scenario_step_seed_004_005</sys_update_name>
+    </x_146833_playwri_0_pw_scenario_step>
+
+</record_update>
