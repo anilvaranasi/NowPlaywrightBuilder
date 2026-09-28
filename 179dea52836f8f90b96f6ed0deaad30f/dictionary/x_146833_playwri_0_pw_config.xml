@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="5b398a2e836b03d0b96f6ed0deaad320" label="PW Config" max_length="40" name="x_146833_playwri_0_pw_config" type="collection">
+        <element label="Environment" max_length="32" name="environment" reference="x_146833_playwri_0_pw_environment" type="reference"/>
+        <element default="90" label="Timeout (sec)" max_length="40" name="timeout_seconds" type="integer"/>
+        <element display="true" label="Name" mandatory="true" max_length="100" name="name" type="string"/>
+        <element label="Headless" max_length="40" name="headless" type="boolean"/>
+        <element default="features/**/*.feature" label="Features Path" max_length="500" name="features_path" type="string"/>
+        <element default="step-definitions/**/*.ts" label="Steps Path" max_length="500" name="steps_path" type="string"/>
+        <element default="0" label="Retries" max_length="40" name="retries" type="integer"/>
+        <element default="chrome" label="Browser Channel" max_length="50" name="browser_channel" type="string"/>
+        <element default="1" label="Workers" max_length="40" name="workers" type="integer"/>
+        <element choice="1" default="html" label="Report Format" max_length="20" name="report_format" type="choice">
+            <choice/>
+        </element>
+        <index name="index">
+            <element name="environment"/>
+        </index>
+    </element>
+</database>

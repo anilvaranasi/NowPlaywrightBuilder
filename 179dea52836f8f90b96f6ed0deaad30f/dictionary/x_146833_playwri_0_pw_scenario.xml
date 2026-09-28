@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="d5498e2e836b03d0b96f6ed0deaad3c1" label="PW Scenario" max_length="40" name="x_146833_playwri_0_pw_scenario" type="collection">
+        <element label="Story" max_length="32" name="story" reference="x_146833_playwri_0_pw_story" type="reference"/>
+        <element display="true" label="Title" mandatory="true" max_length="255" name="title" type="string"/>
+        <element label="Tags" max_length="500" name="tags" type="string"/>
+        <element label="Background Steps" max_length="4000" name="background_steps" type="string"/>
+        <element label="Feature" max_length="32" name="feature" reference="x_146833_playwri_0_pw_feature" type="reference"/>
+        <element default="1" label="Order" max_length="40" name="order" type="integer"/>
+        <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
+        <element choice="1" default="scenario" label="Type" max_length="40" name="type" type="choice">
+            <choice/>
+        </element>
+        <index name="index">
+            <element name="feature"/>
+        </index>
+        <index name="index2">
+            <element name="story"/>
+        </index>
+    </element>
+</database>

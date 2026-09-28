@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="1a49026e836b03d0b96f6ed0deaad33b" label="PW Scenario Step" max_length="40" name="x_146833_playwri_0_pw_scenario_step" type="collection">
+        <element choice="1" default="Given" label="Keyword" max_length="10" name="keyword" type="choice">
+            <choice/>
+        </element>
+        <element label="Scenario" mandatory="true" max_length="32" name="scenario" reference="x_146833_playwri_0_pw_scenario" type="reference"/>
+        <element label="Step Definition" max_length="32" name="step_definition_ref" reference="x_146833_playwri_0_gerkin_steps" type="reference"/>
+        <element label="Step Text" mandatory="true" max_length="1000" name="step_text" type="string"/>
+        <element label="Doc String" max_length="4000" name="doc_string" type="string"/>
+        <element default="1" label="Order" mandatory="true" max_length="40" name="order" type="integer"/>
+        <element label="Data Table" max_length="4000" name="data_table" type="string"/>
+        <index name="index">
+            <element name="scenario"/>
+        </index>
+        <index name="index2">
+            <element name="step_definition_ref"/>
+        </index>
+    </element>
+</database>

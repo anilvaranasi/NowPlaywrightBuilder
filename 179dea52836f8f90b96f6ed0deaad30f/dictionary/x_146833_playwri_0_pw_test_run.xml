@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="f649426e836b03d0b96f6ed0deaad384" label="PW Test Run" max_length="40" name="x_146833_playwri_0_pw_test_run" type="collection">
+        <element label="Config" max_length="32" name="config" reference="x_146833_playwri_0_pw_config" type="reference"/>
+        <element label="Environment" max_length="32" name="environment" reference="x_146833_playwri_0_pw_environment" type="reference"/>
+        <element choice="1" default="pending" label="Status" max_length="20" name="status" type="choice">
+            <choice/>
+        </element>
+        <element default="0" label="Total Scenarios" max_length="40" name="total_scenarios" type="integer"/>
+        <element label="Report URL" max_length="1000" name="report_url" type="url"/>
+        <element label="Feature" max_length="32" name="feature" reference="x_146833_playwri_0_pw_feature" type="reference"/>
+        <element label="Started At" max_length="40" name="started_at" type="glide_date_time"/>
+        <element label="Triggered By" max_length="32" name="triggered_by" reference="sys_user" type="reference"/>
+        <element default="0" label="Skipped" max_length="40" name="skipped" type="integer"/>
+        <element display="true" label="Name" mandatory="true" max_length="255" name="name" type="string"/>
+        <element label="Completed At" max_length="40" name="completed_at" type="glide_date_time"/>
+        <element default="0" label="Failed" max_length="40" name="failed" type="integer"/>
+        <element default="0" label="Passed" max_length="40" name="passed" type="integer"/>
+        <index name="index">
+            <element name="config"/>
+        </index>
+        <index name="index2">
+            <element name="environment"/>
+        </index>
+        <index name="index3">
+            <element name="feature"/>
+        </index>
+        <index name="index4">
+            <element name="triggered_by"/>
+        </index>
+    </element>
+</database>
