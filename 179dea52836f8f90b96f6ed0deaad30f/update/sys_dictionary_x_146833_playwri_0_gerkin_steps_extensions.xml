@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+
+    <!-- step_pattern (display field for gerkin_steps) -->
+    <sys_dictionary action="INSERT_OR_UPDATE" element="step_pattern" table="x_146833_playwri_0_gerkin_steps">
+        <active>true</active>
+        <column_label>Step Pattern</column_label>
+        <comments>Gherkin step text pattern. May contain {string} or {int} parameters.</comments>
+        <display>true</display>
+        <element>step_pattern</element>
+        <internal_type display_value="String">string</internal_type>
+        <mandatory>true</mandatory>
+        <max_length>500</max_length>
+        <name>x_146833_playwri_0_gerkin_steps</name>
+        <sys_class_name>sys_dictionary</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-28 02:00:00</sys_created_on>
+        <sys_id>bb000009000000000000000000000001</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_update_name>sys_dictionary_x_146833_playwri_0_gerkin_steps_step_pattern</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-28 02:00:00</sys_updated_on>
+    </sys_dictionary>
+
+    <!-- keyword -->
+    <sys_dictionary action="INSERT_OR_UPDATE" element="keyword" table="x_146833_playwri_0_gerkin_steps">
+        <active>true</active>
+        <choice>1</choice>
+        <column_label>Keyword</column_label>
+        <default_value>Given</default_value>
+        <display>false</display>
+        <element>keyword</element>
+        <internal_type display_value="Choice">choice</internal_type>
+        <mandatory>true</mandatory>
+        <max_length>10</max_length>
+        <name>x_146833_playwri_0_gerkin_steps</name>
+        <sys_class_name>sys_dictionary</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-28 02:00:00</sys_created_on>
+        <sys_id>bb000009000000000000000000000002</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_update_name>sys_dictionary_x_146833_playwri_0_gerkin_steps_keyword</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-28 02:00:00</sys_updated_on>
+    </sys_dictionary>
+
+    <!-- step_definition_file -->
+    <sys_dictionary action="INSERT_OR_UPDATE" element="step_definition_file" table="x_146833_playwri_0_gerkin_steps">
+        <active>true</active>
+        <column_label>Step Definition File</column_label>
+        <comments>Relative path to the TypeScript step-definitions file e.g. step-definitions/now-assist-skills.steps.ts</comments>
+        <display>false</display>
+        <element>step_definition_file</element>
+        <internal_type display_value="String">string</internal_type>
+        <mandatory>false</mandatory>
+        <max_length>500</max_length>
+        <name>x_146833_playwri_0_gerkin_steps</name>
+        <sys_class_name>sys_dictionary</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-28 02:00:00</sys_created_on>
+        <sys_id>bb000009000000000000000000000003</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_update_name>sys_dictionary_x_146833_playwri_0_gerkin_steps_step_definition_file</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-28 02:00:00</sys_updated_on>
+    </sys_dictionary>
+
+    <!-- page_object -->
+    <sys_dictionary action="INSERT_OR_UPDATE" element="page_object" table="x_146833_playwri_0_gerkin_steps">
+        <active>true</active>
+        <column_label>Page Object</column_label>
+        <comments>Page Object class that implements this step e.g. NowAssistPage</comments>
+        <display>false</display>
+        <element>page_object</element>
+        <internal_type display_value="String">string</internal_type>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <name>x_146833_playwri_0_gerkin_steps</name>
+        <sys_class_name>sys_dictionary</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-28 02:00:00</sys_created_on>
+        <sys_id>bb000009000000000000000000000004</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_update_name>sys_dictionary_x_146833_playwri_0_gerkin_steps_page_object</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-28 02:00:00</sys_updated_on>
+    </sys_dictionary>
+
+    <!-- description -->
+    <sys_dictionary action="INSERT_OR_UPDATE" element="description" table="x_146833_playwri_0_gerkin_steps">
+        <active>true</active>
+        <column_label>Description</column_label>
+        <display>false</display>
+        <element>description</element>
+        <internal_type display_value="HTML">html</internal_type>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <name>x_146833_playwri_0_gerkin_steps</name>
+        <sys_class_name>sys_dictionary</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-28 02:00:00</sys_created_on>
+        <sys_id>bb000009000000000000000000000005</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_update_name>sys_dictionary_x_146833_playwri_0_gerkin_steps_description</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-28 02:00:00</sys_updated_on>
+    </sys_dictionary>
+
+    <!-- is_implemented -->
+    <sys_dictionary action="INSERT_OR_UPDATE" element="is_implemented" table="x_146833_playwri_0_gerkin_steps">
+        <active>true</active>
+        <column_label>Is Implemented</column_label>
+        <comments>True if the TypeScript step definition exists in the project</comments>
+        <default_value>false</default_value>
+        <display>false</display>
+        <element>is_implemented</element>
+        <internal_type display_value="True/False">boolean</internal_type>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <name>x_146833_playwri_0_gerkin_steps</name>
+        <sys_class_name>sys_dictionary</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-28 02:00:00</sys_created_on>
+        <sys_id>bb000009000000000000000000000006</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_update_name>sys_dictionary_x_146833_playwri_0_gerkin_steps_is_implemented</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-28 02:00:00</sys_updated_on>
+    </sys_dictionary>
+
+</record_update>

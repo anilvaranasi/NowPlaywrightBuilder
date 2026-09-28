@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+
+    <!-- ════════════════════════════════════════════════════
+         ACLs for all 8 new tables.
+         Pattern: read (x_146833_playwri_0.user) + write (x_146833_playwri_0.admin)
+         Role sys_ids: admin=2f9dea52836f8f90b96f6ed0deaad350  user=e79dea52836f8f90b96f6ed0deaad369
+         ════════════════════════════════════════════════════ -->
+
+    <!-- ── pw_environment ── -->
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced>
+        <decision_type>allow</decision_type>
+        <description>Allow read on pw_environment for users with x_146833_playwri_0.user</description>
+        <name>x_146833_playwri_0_pw_environment</name>
+        <operation display_value="read">read</operation>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by><sys_created_on>2026-09-28 02:00:00</sys_created_on>
+        <sys_id>dd000001000000000000000000000001</sys_id><sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_policy/><sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_update_name>sys_security_acl_pw_environment_read</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-28 02:00:00</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by><sys_created_on>2026-09-28 02:00:00</sys_created_on>
+        <sys_id>dd000001000000000000000000000002</sys_id><sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_policy/><sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_security_acl display_value="x_146833_playwri_0_pw_environment">dd000001000000000000000000000001</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_pw_environment_read_user</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-28 02:00:00</sys_updated_on>
+        <sys_user_role display_value="x_146833_playwri_0.user">e79dea52836f8f90b96f6ed0deaad369</sys_user_role>
+    </sys_security_acl_role>
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced>
+        <decision_type>allow</decision_type>
+        <description>Allow write on pw_environment for users with x_146833_playwri_0.admin</description>
+        <name>x_146833_playwri_0_pw_environment</name>
+        <operation display_value="write">write</operation>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by><sys_created_on>2026-09-28 02:00:00</sys_created_on>
+        <sys_id>dd000001000000000000000000000003</sys_id><sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_policy/><sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_update_name>sys_security_acl_pw_environment_write</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-28 02:00:00</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by><sys_created_on>2026-09-28 02:00:00</sys_created_on>
+        <sys_id>dd000001000000000000000000000004</sys_id><sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_policy/><sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_security_acl display_value="x_146833_playwri_0_pw_environment">dd000001000000000000000000000003</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_pw_environment_write_admin</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-28 02:00:00</sys_updated_on>
+        <sys_user_role display_value="x_146833_playwri_0.admin">2f9dea52836f8f90b96f6ed0deaad350</sys_user_role>
+    </sys_security_acl_role>
+
+    <!-- ── pw_config ── -->
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced>
+        <decision_type>allow</decision_type>
+        <description>Allow read on pw_config for users with x_146833_playwri_0.user</description>
+        <name>x_146833_playwri_0_pw_config</name>
+        <operation display_value="read">read</operation>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by><sys_created_on>2026-09-28 02:00:00</sys_created_on>
+        <sys_id>dd000002000000000000000000000001</sys_id><sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_policy/><sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_update_name>sys_security_acl_pw_config_read</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-28 02:00:00</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by><sys_created_on>2026-09-28 02:00:00</sys_created_on>
+        <sys_id>dd000002000000000000000000000002</sys_id><sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_policy/><sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_security_acl display_value="x_146833_playwri_0_pw_config">dd000002000000000000000000000001</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_pw_config_read_user</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-28 02:00:00</sys_updated_on>
+        <sys_user_role display_value="x_146833_playwri_0.user">e79dea52836f8f90b96f6ed0deaad369</sys_user_role>
+    </sys_security_acl_role>
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced>
+        <decision_type>allow</decision_type>
+        <description>Allow write on pw_config for users with x_146833_playwri_0.admin</description>
+        <name>x_146833_playwri_0_pw_config</name>
+        <operation display_value="write">write</operation>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by><sys_created_on>2026-09-28 02:00:00</sys_created_on>
+        <sys_id>dd000002000000000000000000000003</sys_id><sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_policy/><sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_update_name>sys_security_acl_pw_config_write</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-28 02:00:00</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by><sys_created_on>2026-09-28 02:00:00</sys_created_on>
+        <sys_id>dd000002000000000000000000000004</sys_id><sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_policy/><sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_security_acl display_value="x_146833_playwri_0_pw_config">dd000002000000000000000000000003</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_pw_config_write_admin</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-28 02:00:00</sys_updated_on>
+        <sys_user_role display_value="x_146833_playwri_0.admin">2f9dea52836f8f90b96f6ed0deaad350</sys_user_role>
+    </sys_security_acl_role>
+
+    <!-- ── pw_feature ── -->
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced>
+        <decision_type>allow</decision_type><name>x_146833_playwri_0_pw_feature</name>
+        <operation display_value="read">read</operation>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by><sys_created_on>2026-09-28 02:00:00</sys_created_on>
+        <sys_id>dd000003000000000000000000000001</sys_id><sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_policy/><sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_update_name>sys_security_acl_pw_feature_read</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-28 02:00:00</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by><sys_created_on>2026-09-28 02:00:00</sys_created_on>
+        <sys_id>dd000003000000000000000000000002</sys_id><sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_policy/><sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_security_acl display_value="x_146833_playwri_0_pw_feature">dd000003000000000000000000000001</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_pw_feature_read_user</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-28 02:00:00</sys_updated_on>
+        <sys_user_role display_value="x_146833_playwri_0.user">e79dea52836f8f90b96f6ed0deaad369</sys_user_role>
+    </sys_security_acl_role>
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced>
+        <decision_type>allow</decision_type><name>x_146833_playwri_0_pw_feature</name>
+        <operation display_value="write">write</operation>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by><sys_created_on>2026-09-28 02:00:00</sys_created_on>
+        <sys_id>dd000003000000000000000000000003</sys_id><sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_policy/><sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_update_name>sys_security_acl_pw_feature_write</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-28 02:00:00</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by><sys_created_on>2026-09-28 02:00:00</sys_created_on>
+        <sys_id>dd000003000000000000000000000004</sys_id><sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_policy/><sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_security_acl display_value="x_146833_playwri_0_pw_feature">dd000003000000000000000000000003</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_pw_feature_write_admin</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-28 02:00:00</sys_updated_on>
+        <sys_user_role display_value="x_146833_playwri_0.admin">2f9dea52836f8f90b96f6ed0deaad350</sys_user_role>
+    </sys_security_acl_role>
+
+    <!-- ── pw_story ── -->
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced>
+        <decision_type>allow</decision_type><name>x_146833_playwri_0_pw_story</name>
+        <operation display_value="read">read</operation>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by><sys_created_on>2026-09-28 02:00:00</sys_created_on>
+        <sys_id>dd000004000000000000000000000001</sys_id><sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_policy/><sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_update_name>sys_security_acl_pw_story_read</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-28 02:00:00</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by><sys_created_on>2026-09-28 02:00:00</sys_created_on>
+        <sys_id>dd000004000000000000000000000002</sys_id><sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_policy/><sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_security_acl display_value="x_146833_playwri_0_pw_story">dd000004000000000000000000000001</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_pw_story_read_user</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-28 02:00:00</sys_updated_on>
+        <sys_user_role display_value="x_146833_playwri_0.user">e79dea52836f8f90b96f6ed0deaad369</sys_user_role>
+    </sys_security_acl_role>
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced>
+        <decision_type>allow</decision_type><name>x_146833_playwri_0_pw_story</name>
+        <operation display_value="write">write</operation>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by><sys_created_on>2026-09-28 02:00:00</sys_created_on>
+        <sys_id>dd000004000000000000000000000003</sys_id><sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_policy/><sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_update_name>sys_security_acl_pw_story_write</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-28 02:00:00</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by><sys_created_on>2026-09-28 02:00:00</sys_created_on>
+        <sys_id>dd000004000000000000000000000004</sys_id><sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_policy/><sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_security_acl display_value="x_146833_playwri_0_pw_story">dd000004000000000000000000000003</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_pw_story_write_admin</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-28 02:00:00</sys_updated_on>
+        <sys_user_role display_value="x_146833_playwri_0.admin">2f9dea52836f8f90b96f6ed0deaad350</sys_user_role>
+    </sys_security_acl_role>
+
+    <!-- ── pw_scenario ── -->
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced>
+        <decision_type>allow</decision_type><name>x_146833_playwri_0_pw_scenario</name>
+        <operation display_value="read">read</operation>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by><sys_created_on>2026-09-28 02:00:00</sys_created_on>
+        <sys_id>dd000005000000000000000000000001</sys_id><sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_policy/><sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_update_name>sys_security_acl_pw_scenario_read</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-28 02:00:00</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by><sys_created_on>2026-09-28 02:00:00</sys_created_on>
+        <sys_id>dd000005000000000000000000000002</sys_id><sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_policy/><sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_security_acl display_value="x_146833_playwri_0_pw_scenario">dd000005000000000000000000000001</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_pw_scenario_read_user</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-28 02:00:00</sys_updated_on>
+        <sys_user_role display_value="x_146833_playwri_0.user">e79dea52836f8f90b96f6ed0deaad369</sys_user_role>
+    </sys_security_acl_role>
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced>
+        <decision_type>allow</decision_type><name>x_146833_playwri_0_pw_scenario</name>
+        <operation display_value="write">write</operation>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by><sys_created_on>2026-09-28 02:00:00</sys_created_on>
+        <sys_id>dd000005000000000000000000000003</sys_id><sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_policy/><sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_update_name>sys_security_acl_pw_scenario_write</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-28 02:00:00</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by><sys_created_on>2026-09-28 02:00:00</sys_created_on>
+        <sys_id>dd000005000000000000000000000004</sys_id><sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_policy/><sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_security_acl display_value="x_146833_playwri_0_pw_scenario">dd000005000000000000000000000003</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_pw_scenario_write_admin</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-28 02:00:00</sys_updated_on>
+        <sys_user_role display_value="x_146833_playwri_0.admin">2f9dea52836f8f90b96f6ed0deaad350</sys_user_role>
+    </sys_security_acl_role>
+
+    <!-- ── pw_scenario_step ── -->
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced>
+        <decision_type>allow</decision_type><name>x_146833_playwri_0_pw_scenario_step</name>
+        <operation display_value="read">read</operation>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by><sys_created_on>2026-09-28 02:00:00</sys_created_on>
+        <sys_id>dd000006000000000000000000000001</sys_id><sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_policy/><sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_update_name>sys_security_acl_pw_scenario_step_read</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-28 02:00:00</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by><sys_created_on>2026-09-28 02:00:00</sys_created_on>
+        <sys_id>dd000006000000000000000000000002</sys_id><sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_policy/><sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_security_acl display_value="x_146833_playwri_0_pw_scenario_step">dd000006000000000000000000000001</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_pw_scenario_step_read_user</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-28 02:00:00</sys_updated_on>
+        <sys_user_role display_value="x_146833_playwri_0.user">e79dea52836f8f90b96f6ed0deaad369</sys_user_role>
+    </sys_security_acl_role>
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced>
+        <decision_type>allow</decision_type><name>x_146833_playwri_0_pw_scenario_step</name>
+        <operation display_value="write">write</operation>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by><sys_created_on>2026-09-28 02:00:00</sys_created_on>
+        <sys_id>dd000006000000000000000000000003</sys_id><sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_policy/><sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_update_name>sys_security_acl_pw_scenario_step_write</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-28 02:00:00</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by><sys_created_on>2026-09-28 02:00:00</sys_created_on>
+        <sys_id>dd000006000000000000000000000004</sys_id><sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_policy/><sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_security_acl display_value="x_146833_playwri_0_pw_scenario_step">dd000006000000000000000000000003</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_pw_scenario_step_write_admin</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-28 02:00:00</sys_updated_on>
+        <sys_user_role display_value="x_146833_playwri_0.admin">2f9dea52836f8f90b96f6ed0deaad350</sys_user_role>
+    </sys_security_acl_role>
+
+    <!-- ── pw_test_run ── -->
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced>
+        <decision_type>allow</decision_type><name>x_146833_playwri_0_pw_test_run</name>
+        <operation display_value="read">read</operation>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by><sys_created_on>2026-09-28 02:00:00</sys_created_on>
+        <sys_id>dd000007000000000000000000000001</sys_id><sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_policy/><sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_update_name>sys_security_acl_pw_test_run_read</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-28 02:00:00</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by><sys_created_on>2026-09-28 02:00:00</sys_created_on>
+        <sys_id>dd000007000000000000000000000002</sys_id><sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_policy/><sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_security_acl display_value="x_146833_playwri_0_pw_test_run">dd000007000000000000000000000001</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_pw_test_run_read_user</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-28 02:00:00</sys_updated_on>
+        <sys_user_role display_value="x_146833_playwri_0.user">e79dea52836f8f90b96f6ed0deaad369</sys_user_role>
+    </sys_security_acl_role>
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced>
+        <decision_type>allow</decision_type><name>x_146833_playwri_0_pw_test_run</name>
+        <operation display_value="write">write</operation>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by><sys_created_on>2026-09-28 02:00:00</sys_created_on>
+        <sys_id>dd000007000000000000000000000003</sys_id><sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_policy/><sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_update_name>sys_security_acl_pw_test_run_write</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-28 02:00:00</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by><sys_created_on>2026-09-28 02:00:00</sys_created_on>
+        <sys_id>dd000007000000000000000000000004</sys_id><sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_policy/><sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_security_acl display_value="x_146833_playwri_0_pw_test_run">dd000007000000000000000000000003</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_pw_test_run_write_admin</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-28 02:00:00</sys_updated_on>
+        <sys_user_role display_value="x_146833_playwri_0.admin">2f9dea52836f8f90b96f6ed0deaad350</sys_user_role>
+    </sys_security_acl_role>
+
+    <!-- ── pw_test_result ── -->
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced>
+        <decision_type>allow</decision_type><name>x_146833_playwri_0_pw_test_result</name>
+        <operation display_value="read">read</operation>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by><sys_created_on>2026-09-28 02:00:00</sys_created_on>
+        <sys_id>dd000008000000000000000000000001</sys_id><sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_policy/><sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_update_name>sys_security_acl_pw_test_result_read</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-28 02:00:00</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by><sys_created_on>2026-09-28 02:00:00</sys_created_on>
+        <sys_id>dd000008000000000000000000000002</sys_id><sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_policy/><sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_security_acl display_value="x_146833_playwri_0_pw_test_result">dd000008000000000000000000000001</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_pw_test_result_read_user</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-28 02:00:00</sys_updated_on>
+        <sys_user_role display_value="x_146833_playwri_0.user">e79dea52836f8f90b96f6ed0deaad369</sys_user_role>
+    </sys_security_acl_role>
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced>
+        <decision_type>allow</decision_type><name>x_146833_playwri_0_pw_test_result</name>
+        <operation display_value="write">write</operation>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by><sys_created_on>2026-09-28 02:00:00</sys_created_on>
+        <sys_id>dd000008000000000000000000000003</sys_id><sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_policy/><sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_update_name>sys_security_acl_pw_test_result_write</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-28 02:00:00</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by><sys_created_on>2026-09-28 02:00:00</sys_created_on>
+        <sys_id>dd000008000000000000000000000004</sys_id><sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_policy/><sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_security_acl display_value="x_146833_playwri_0_pw_test_result">dd000008000000000000000000000003</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_pw_test_result_write_admin</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-09-28 02:00:00</sys_updated_on>
+        <sys_user_role display_value="x_146833_playwri_0.admin">2f9dea52836f8f90b96f6ed0deaad350</sys_user_role>
+    </sys_security_acl_role>
+
+</record_update>

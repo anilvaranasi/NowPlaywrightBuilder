@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+
+    <!-- Collection -->
+    <sys_dictionary action="INSERT_OR_UPDATE" element="" table="x_146833_playwri_0_pw_config">
+        <active>true</active>
+        <array>false</array>
+        <attributes>enforce_dot_walk_cross_scope_access=true</attributes>
+        <internal_type display_value="Collection">collection</internal_type>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <name>x_146833_playwri_0_pw_config</name>
+        <sys_class_name>sys_dictionary</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-28 02:00:00</sys_created_on>
+        <sys_id>bb000002000000000000000000000001</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_update_name>sys_dictionary_x_146833_playwri_0_pw_config_null</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-28 02:00:00</sys_updated_on>
+    </sys_dictionary>
+
+    <!-- name -->
+    <sys_dictionary action="INSERT_OR_UPDATE" element="name" table="x_146833_playwri_0_pw_config">
+        <active>true</active>
+        <column_label>Name</column_label>
+        <display>true</display>
+        <element>name</element>
+        <internal_type display_value="String">string</internal_type>
+        <mandatory>true</mandatory>
+        <max_length>100</max_length>
+        <name>x_146833_playwri_0_pw_config</name>
+        <sys_class_name>sys_dictionary</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-28 02:00:00</sys_created_on>
+        <sys_id>bb000002000000000000000000000002</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_update_name>sys_dictionary_x_146833_playwri_0_pw_config_name</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-28 02:00:00</sys_updated_on>
+    </sys_dictionary>
+
+    <!-- environment (reference) -->
+    <sys_dictionary action="INSERT_OR_UPDATE" element="environment" table="x_146833_playwri_0_pw_config">
+        <active>true</active>
+        <column_label>Environment</column_label>
+        <display>false</display>
+        <element>environment</element>
+        <internal_type display_value="Reference">reference</internal_type>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <name>x_146833_playwri_0_pw_config</name>
+        <reference>x_146833_playwri_0_pw_environment</reference>
+        <sys_class_name>sys_dictionary</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-28 02:00:00</sys_created_on>
+        <sys_id>bb000002000000000000000000000003</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_update_name>sys_dictionary_x_146833_playwri_0_pw_config_environment</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-28 02:00:00</sys_updated_on>
+    </sys_dictionary>
+
+    <!-- timeout_seconds -->
+    <sys_dictionary action="INSERT_OR_UPDATE" element="timeout_seconds" table="x_146833_playwri_0_pw_config">
+        <active>true</active>
+        <column_label>Timeout (seconds)</column_label>
+        <default_value>90</default_value>
+        <display>false</display>
+        <element>timeout_seconds</element>
+        <internal_type display_value="Integer">integer</internal_type>
+        <mandatory>true</mandatory>
+        <max_length>40</max_length>
+        <name>x_146833_playwri_0_pw_config</name>
+        <sys_class_name>sys_dictionary</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-28 02:00:00</sys_created_on>
+        <sys_id>bb000002000000000000000000000004</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_update_name>sys_dictionary_x_146833_playwri_0_pw_config_timeout_seconds</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-28 02:00:00</sys_updated_on>
+    </sys_dictionary>
+
+    <!-- workers -->
+    <sys_dictionary action="INSERT_OR_UPDATE" element="workers" table="x_146833_playwri_0_pw_config">
+        <active>true</active>
+        <column_label>Workers</column_label>
+        <default_value>1</default_value>
+        <display>false</display>
+        <element>workers</element>
+        <internal_type display_value="Integer">integer</internal_type>
+        <mandatory>true</mandatory>
+        <max_length>40</max_length>
+        <name>x_146833_playwri_0_pw_config</name>
+        <sys_class_name>sys_dictionary</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-28 02:00:00</sys_created_on>
+        <sys_id>bb000002000000000000000000000005</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_update_name>sys_dictionary_x_146833_playwri_0_pw_config_workers</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-28 02:00:00</sys_updated_on>
+    </sys_dictionary>
+
+    <!-- retries -->
+    <sys_dictionary action="INSERT_OR_UPDATE" element="retries" table="x_146833_playwri_0_pw_config">
+        <active>true</active>
+        <column_label>Retries</column_label>
+        <default_value>0</default_value>
+        <display>false</display>
+        <element>retries</element>
+        <internal_type display_value="Integer">integer</internal_type>
+        <mandatory>true</mandatory>
+        <max_length>40</max_length>
+        <name>x_146833_playwri_0_pw_config</name>
+        <sys_class_name>sys_dictionary</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-28 02:00:00</sys_created_on>
+        <sys_id>bb000002000000000000000000000006</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_update_name>sys_dictionary_x_146833_playwri_0_pw_config_retries</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-28 02:00:00</sys_updated_on>
+    </sys_dictionary>
+
+    <!-- headless -->
+    <sys_dictionary action="INSERT_OR_UPDATE" element="headless" table="x_146833_playwri_0_pw_config">
+        <active>true</active>
+        <column_label>Headless</column_label>
+        <default_value>false</default_value>
+        <display>false</display>
+        <element>headless</element>
+        <internal_type display_value="True/False">boolean</internal_type>
+        <mandatory>true</mandatory>
+        <max_length>40</max_length>
+        <name>x_146833_playwri_0_pw_config</name>
+        <sys_class_name>sys_dictionary</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-28 02:00:00</sys_created_on>
+        <sys_id>bb000002000000000000000000000007</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_update_name>sys_dictionary_x_146833_playwri_0_pw_config_headless</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-28 02:00:00</sys_updated_on>
+    </sys_dictionary>
+
+    <!-- browser_channel -->
+    <sys_dictionary action="INSERT_OR_UPDATE" element="browser_channel" table="x_146833_playwri_0_pw_config">
+        <active>true</active>
+        <choice>1</choice>
+        <column_label>Browser Channel</column_label>
+        <default_value>chrome</default_value>
+        <display>false</display>
+        <element>browser_channel</element>
+        <internal_type display_value="Choice">choice</internal_type>
+        <mandatory>true</mandatory>
+        <max_length>40</max_length>
+        <name>x_146833_playwri_0_pw_config</name>
+        <sys_class_name>sys_dictionary</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-28 02:00:00</sys_created_on>
+        <sys_id>bb000002000000000000000000000008</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_update_name>sys_dictionary_x_146833_playwri_0_pw_config_browser_channel</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-28 02:00:00</sys_updated_on>
+    </sys_dictionary>
+
+    <!-- report_format -->
+    <sys_dictionary action="INSERT_OR_UPDATE" element="report_format" table="x_146833_playwri_0_pw_config">
+        <active>true</active>
+        <choice>1</choice>
+        <column_label>Report Format</column_label>
+        <default_value>html</default_value>
+        <display>false</display>
+        <element>report_format</element>
+        <internal_type display_value="Choice">choice</internal_type>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <name>x_146833_playwri_0_pw_config</name>
+        <sys_class_name>sys_dictionary</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-28 02:00:00</sys_created_on>
+        <sys_id>bb000002000000000000000000000009</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_update_name>sys_dictionary_x_146833_playwri_0_pw_config_report_format</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-28 02:00:00</sys_updated_on>
+    </sys_dictionary>
+
+    <!-- features_path -->
+    <sys_dictionary action="INSERT_OR_UPDATE" element="features_path" table="x_146833_playwri_0_pw_config">
+        <active>true</active>
+        <column_label>Features Path</column_label>
+        <default_value>features/**/*.feature</default_value>
+        <display>false</display>
+        <element>features_path</element>
+        <internal_type display_value="String">string</internal_type>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <name>x_146833_playwri_0_pw_config</name>
+        <sys_class_name>sys_dictionary</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-28 02:00:00</sys_created_on>
+        <sys_id>bb000002000000000000000000000010</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_update_name>sys_dictionary_x_146833_playwri_0_pw_config_features_path</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-28 02:00:00</sys_updated_on>
+    </sys_dictionary>
+
+    <!-- steps_path -->
+    <sys_dictionary action="INSERT_OR_UPDATE" element="steps_path" table="x_146833_playwri_0_pw_config">
+        <active>true</active>
+        <column_label>Steps Path</column_label>
+        <default_value>step-definitions/**/*.ts</default_value>
+        <display>false</display>
+        <element>steps_path</element>
+        <internal_type display_value="String">string</internal_type>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <name>x_146833_playwri_0_pw_config</name>
+        <sys_class_name>sys_dictionary</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-28 02:00:00</sys_created_on>
+        <sys_id>bb000002000000000000000000000011</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_update_name>sys_dictionary_x_146833_playwri_0_pw_config_steps_path</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-28 02:00:00</sys_updated_on>
+    </sys_dictionary>
+
+</record_update>
