@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="b0494e2e836b03d0b96f6ed0deaad364" label="PW Story" max_length="40" name="x_146833_playwri_0_pw_story" type="collection">
+        <element label="Feature" max_length="32" name="feature" reference="x_146833_playwri_0_pw_feature" type="reference"/>
+        <element label="So That" max_length="500" name="so_that" type="string"/>
+        <element display="true" label="Title" mandatory="true" max_length="255" name="title" type="string"/>
+        <element label="I Want" max_length="500" name="i_want" type="string"/>
+        <element choice="1" default="medium" label="Priority" max_length="20" name="priority" type="choice">
+            <choice/>
+        </element>
+        <element label="As A" max_length="255" name="as_a" type="string"/>
+        <element label="Acceptance Criteria" max_length="4000" name="acceptance_criteria" type="string"/>
+        <index name="index">
+            <element name="feature"/>
+        </index>
+    </element>
+</database>

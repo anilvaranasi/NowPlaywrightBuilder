@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="1e394e2a836b03d0b96f6ed0deaad386" label="PW Environment" max_length="40" name="x_146833_playwri_0_pw_environment" type="collection">
+        <element choice="1" default="dev" label="Environment Type" max_length="40" name="env_type" type="choice">
+            <choice/>
+        </element>
+        <element label="Username" mandatory="true" max_length="255" name="username" type="string"/>
+        <element display="true" label="Name" mandatory="true" max_length="100" name="name" type="string"/>
+        <element label="Instance URL" mandatory="true" max_length="500" name="instance_url" type="url"/>
+        <element label="Password" max_length="255" name="password" type="password2"/>
+        <element default="/now/sow/home" label="Workspace Path" max_length="500" name="workspace_path" type="string"/>
+        <element default="true" label="Is Active" max_length="40" name="is_active" type="boolean"/>
+    </element>
+</database>

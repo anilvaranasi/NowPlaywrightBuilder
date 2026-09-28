@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="doc_string" label="Doc String" language="en" table="x_146833_playwri_0_pw_scenario_step">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>doc_string</element>
+            <help/>
+            <hint/>
+            <label>Doc String</label>
+            <language>en</language>
+            <name>x_146833_playwri_0_pw_scenario_step</name>
+            <plural>Doc Strings</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-09-28 17:16:42</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Doc String</sys_name>
+            <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+            <sys_update_name>sys_documentation_x_146833_playwri_0_pw_scenario_step_doc_string_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-09-28 17:16:42</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
