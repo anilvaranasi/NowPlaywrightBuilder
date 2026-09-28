@@ -21,7 +21,7 @@
          ════════════════════════════════════════════════════ -->
 
     <x_146833_playwri_0_pw_environment action="INSERT_OR_UPDATE">
-        <sys_id>seed0001000000000000000000000001</sys_id>
+        <sys_id/>
         <name>IBM SG Demo4</name>
         <instance_url>https://ibmsingaporepteltdemo4.service-now.com</instance_url>
         <username>srinivas.anil.kumar.varanasi@ibm.com</username>
@@ -47,7 +47,7 @@
          ════════════════════════════════════════════════════ -->
 
     <x_146833_playwri_0_pw_config action="INSERT_OR_UPDATE">
-        <sys_id>seed0002000000000000000000000001</sys_id>
+        <sys_id/>
         <name>Demo4 — Default</name>
         <environment display_value="IBM SG Demo4">seed0001000000000000000000000001</environment>
         <timeout_seconds>90</timeout_seconds>
@@ -76,7 +76,7 @@
 
     <!-- 1. Given I am logged in to ServiceNow -->
     <x_146833_playwri_0_gerkin_steps action="INSERT_OR_UPDATE">
-        <sys_id>seed0009000000000000000000000001</sys_id>
+        <sys_id/>
         <step_pattern>I am logged in to ServiceNow</step_pattern>
         <keyword>Given</keyword>
         <step_definition_file>step-definitions/now-assist-skills.steps.ts</step_definition_file>
@@ -95,7 +95,7 @@
 
     <!-- 2. Given I am on the Next Experience home page -->
     <x_146833_playwri_0_gerkin_steps action="INSERT_OR_UPDATE">
-        <sys_id>seed0009000000000000000000000002</sys_id>
+        <sys_id/>
         <step_pattern>I am on the Next Experience home page</step_pattern>
         <keyword>Given</keyword>
         <step_definition_file>step-definitions/now-assist-skills.steps.ts</step_definition_file>
@@ -114,7 +114,7 @@
 
     <!-- 3. When I open the Now Assist skill picker -->
     <x_146833_playwri_0_gerkin_steps action="INSERT_OR_UPDATE">
-        <sys_id>seed0009000000000000000000000003</sys_id>
+        <sys_id/>
         <step_pattern>I open the Now Assist skill picker</step_pattern>
         <keyword>When</keyword>
         <step_definition_file>step-definitions/now-assist-skills.steps.ts</step_definition_file>
@@ -133,7 +133,7 @@
 
     <!-- 4. Then I should see at least 1 skill available -->
     <x_146833_playwri_0_gerkin_steps action="INSERT_OR_UPDATE">
-        <sys_id>seed0009000000000000000000000004</sys_id>
+        <sys_id/>
         <step_pattern>I should see at least 1 skill available</step_pattern>
         <keyword>Then</keyword>
         <step_definition_file>step-definitions/now-assist-skills.steps.ts</step_definition_file>
@@ -152,7 +152,7 @@
 
     <!-- 5. Then the available skills should be written to a file -->
     <x_146833_playwri_0_gerkin_steps action="INSERT_OR_UPDATE">
-        <sys_id>seed0009000000000000000000000005</sys_id>
+        <sys_id/>
         <step_pattern>the available skills should be written to a file</step_pattern>
         <keyword>Then</keyword>
         <step_definition_file>step-definitions/now-assist-skills.steps.ts</step_definition_file>
@@ -171,7 +171,7 @@
 
     <!-- 6. Then the skill {string} should be visible -->
     <x_146833_playwri_0_gerkin_steps action="INSERT_OR_UPDATE">
-        <sys_id>seed0009000000000000000000000006</sys_id>
+        <sys_id/>
         <step_pattern>the skill {string} should be visible</step_pattern>
         <keyword>Then</keyword>
         <step_definition_file>step-definitions/now-assist-skills.steps.ts</step_definition_file>
@@ -190,7 +190,7 @@
 
     <!-- 7. When I navigate to the Workspaces menu -->
     <x_146833_playwri_0_gerkin_steps action="INSERT_OR_UPDATE">
-        <sys_id>seed0009000000000000000000000007</sys_id>
+        <sys_id/>
         <step_pattern>I open the Workspaces menu</step_pattern>
         <keyword>When</keyword>
         <step_definition_file>step-definitions/(pending — maps to sow.spec.ts)</step_definition_file>
@@ -209,7 +209,7 @@
 
     <!-- 8. When I open the Service Operations Workspace -->
     <x_146833_playwri_0_gerkin_steps action="INSERT_OR_UPDATE">
-        <sys_id>seed0009000000000000000000000008</sys_id>
+        <sys_id/>
         <step_pattern>I open the Service Operations Workspace</step_pattern>
         <keyword>When</keyword>
         <step_definition_file>step-definitions/(pending — maps to sow.spec.ts)</step_definition_file>
@@ -228,7 +228,7 @@
 
     <!-- 9. Then the SOW should be loaded -->
     <x_146833_playwri_0_gerkin_steps action="INSERT_OR_UPDATE">
-        <sys_id>seed0009000000000000000000000009</sys_id>
+        <sys_id/>
         <step_pattern>the Service Operations Workspace should be loaded</step_pattern>
         <keyword>Then</keyword>
         <step_definition_file>step-definitions/(pending — maps to sow.spec.ts)</step_definition_file>
@@ -252,7 +252,7 @@
          ════════════════════════════════════════════════════ -->
 
     <x_146833_playwri_0_pw_feature action="INSERT_OR_UPDATE">
-        <sys_id>seed0003000000000000000000000001</sys_id>
+        <sys_id/>
         <title>Now Assist Skills Panel</title>
         <description>Verify the Now Assist skills panel opens and lists expected AI-powered skills.</description>
         <tags>@now-assist</tags>
@@ -270,7 +270,7 @@
 
     <!-- Story 1.1 -->
     <x_146833_playwri_0_pw_story action="INSERT_OR_UPDATE">
-        <sys_id>seed0004000000000000000000000001</sys_id>
+        <sys_id/>
         <feature display_value="Now Assist Skills Panel">seed0003000000000000000000000001</feature>
         <title>View available Now Assist skills</title>
         <as_a>a ServiceNow user</as_a>
@@ -289,7 +289,7 @@
 
     <!-- Scenario 1.1 — View all available skills -->
     <x_146833_playwri_0_pw_scenario action="INSERT_OR_UPDATE">
-        <sys_id>seed0005000000000000000000000001</sys_id>
+        <sys_id/>
         <story display_value="View available Now Assist skills">seed0004000000000000000000000001</story>
         <feature display_value="Now Assist Skills Panel">seed0003000000000000000000000001</feature>
         <title>View all available Now Assist skills</title>
@@ -310,7 +310,7 @@
 
     <!-- Steps for Scenario 1.1 -->
     <x_146833_playwri_0_pw_scenario_step action="INSERT_OR_UPDATE">
-        <sys_id>seed0006000000000000000000000001</sys_id>
+        <sys_id/>
         <scenario display_value="View all available Now Assist skills">seed0005000000000000000000000001</scenario>
         <order>1</order><keyword>When</keyword>
         <step_text>I open the Now Assist skill picker</step_text>
@@ -322,7 +322,7 @@
         <sys_update_name>x_146833_playwri_0_pw_scenario_step_seed_001_001</sys_update_name>
     </x_146833_playwri_0_pw_scenario_step>
     <x_146833_playwri_0_pw_scenario_step action="INSERT_OR_UPDATE">
-        <sys_id>seed0006000000000000000000000002</sys_id>
+        <sys_id/>
         <scenario display_value="View all available Now Assist skills">seed0005000000000000000000000001</scenario>
         <order>2</order><keyword>Then</keyword>
         <step_text>I should see at least 1 skill available</step_text>
@@ -334,7 +334,7 @@
         <sys_update_name>x_146833_playwri_0_pw_scenario_step_seed_001_002</sys_update_name>
     </x_146833_playwri_0_pw_scenario_step>
     <x_146833_playwri_0_pw_scenario_step action="INSERT_OR_UPDATE">
-        <sys_id>seed0006000000000000000000000003</sys_id>
+        <sys_id/>
         <scenario display_value="View all available Now Assist skills">seed0005000000000000000000000001</scenario>
         <order>3</order><keyword>And</keyword>
         <step_text>the available skills should be written to a file</step_text>
@@ -348,7 +348,7 @@
 
     <!-- Scenario 1.2 — Verify specific skills -->
     <x_146833_playwri_0_pw_scenario action="INSERT_OR_UPDATE">
-        <sys_id>seed0005000000000000000000000002</sys_id>
+        <sys_id/>
         <story display_value="View available Now Assist skills">seed0004000000000000000000000001</story>
         <feature display_value="Now Assist Skills Panel">seed0003000000000000000000000001</feature>
         <title>Verify specific skills are present</title>
@@ -369,7 +369,7 @@
 
     <!-- Steps for Scenario 1.2 -->
     <x_146833_playwri_0_pw_scenario_step action="INSERT_OR_UPDATE">
-        <sys_id>seed0006000000000000000000000004</sys_id>
+        <sys_id/>
         <scenario display_value="Verify specific skills are present">seed0005000000000000000000000002</scenario>
         <order>1</order><keyword>When</keyword>
         <step_text>I open the Now Assist skill picker</step_text>
@@ -381,7 +381,7 @@
         <sys_update_name>x_146833_playwri_0_pw_scenario_step_seed_002_001</sys_update_name>
     </x_146833_playwri_0_pw_scenario_step>
     <x_146833_playwri_0_pw_scenario_step action="INSERT_OR_UPDATE">
-        <sys_id>seed0006000000000000000000000005</sys_id>
+        <sys_id/>
         <scenario display_value="Verify specific skills are present">seed0005000000000000000000000002</scenario>
         <order>2</order><keyword>Then</keyword>
         <step_text>the skill "Generate resolution notes" should be visible</step_text>
@@ -393,7 +393,7 @@
         <sys_update_name>x_146833_playwri_0_pw_scenario_step_seed_002_002</sys_update_name>
     </x_146833_playwri_0_pw_scenario_step>
     <x_146833_playwri_0_pw_scenario_step action="INSERT_OR_UPDATE">
-        <sys_id>seed0006000000000000000000000006</sys_id>
+        <sys_id/>
         <scenario display_value="Verify specific skills are present">seed0005000000000000000000000002</scenario>
         <order>3</order><keyword>And</keyword>
         <step_text>the skill "Summarize a record" should be visible</step_text>
@@ -405,7 +405,7 @@
         <sys_update_name>x_146833_playwri_0_pw_scenario_step_seed_002_003</sys_update_name>
     </x_146833_playwri_0_pw_scenario_step>
     <x_146833_playwri_0_pw_scenario_step action="INSERT_OR_UPDATE">
-        <sys_id>seed0006000000000000000000000007</sys_id>
+        <sys_id/>
         <scenario display_value="Verify specific skills are present">seed0005000000000000000000000002</scenario>
         <order>4</order><keyword>And</keyword>
         <step_text>the skill "Incident assist" should be visible</step_text>
@@ -424,7 +424,7 @@
          ════════════════════════════════════════════════════ -->
 
     <x_146833_playwri_0_pw_feature action="INSERT_OR_UPDATE">
-        <sys_id>seed0003000000000000000000000002</sys_id>
+        <sys_id/>
         <title>Incident Management</title>
         <description>Create and verify Incident records via the ServiceNow classic UI form.</description>
         <tags>@incident</tags>
@@ -442,7 +442,7 @@
 
     <!-- Story 2.1 -->
     <x_146833_playwri_0_pw_story action="INSERT_OR_UPDATE">
-        <sys_id>seed0004000000000000000000000002</sys_id>
+        <sys_id/>
         <feature display_value="Incident Management">seed0003000000000000000000000002</feature>
         <title>Create a new Incident record</title>
         <as_a>a ServiceNow agent</as_a>
@@ -462,7 +462,7 @@
 
     <!-- Scenario 2.1 -->
     <x_146833_playwri_0_pw_scenario action="INSERT_OR_UPDATE">
-        <sys_id>seed0005000000000000000000000003</sys_id>
+        <sys_id/>
         <story display_value="Create a new Incident record">seed0004000000000000000000000002</story>
         <feature display_value="Incident Management">seed0003000000000000000000000002</feature>
         <title>Create a new Incident and verify submission</title>
@@ -482,7 +482,7 @@
 
     <!-- Steps for Scenario 2.1 — mapped directly from incident-test.spec.ts -->
     <x_146833_playwri_0_pw_scenario_step action="INSERT_OR_UPDATE">
-        <sys_id>seed0006000000000000000000000008</sys_id>
+        <sys_id/>
         <scenario display_value="Create a new Incident and verify submission">seed0005000000000000000000000003</scenario>
         <order>1</order><keyword>Given</keyword>
         <step_text>I am logged in to ServiceNow</step_text>
@@ -494,7 +494,7 @@
         <sys_update_name>x_146833_playwri_0_pw_scenario_step_seed_003_001</sys_update_name>
     </x_146833_playwri_0_pw_scenario_step>
     <x_146833_playwri_0_pw_scenario_step action="INSERT_OR_UPDATE">
-        <sys_id>seed0006000000000000000000000009</sys_id>
+        <sys_id/>
         <scenario display_value="Create a new Incident and verify submission">seed0005000000000000000000000003</scenario>
         <order>2</order><keyword>When</keyword>
         <step_text>I navigate to the new Incident form</step_text>
@@ -505,7 +505,7 @@
         <sys_update_name>x_146833_playwri_0_pw_scenario_step_seed_003_002</sys_update_name>
     </x_146833_playwri_0_pw_scenario_step>
     <x_146833_playwri_0_pw_scenario_step action="INSERT_OR_UPDATE">
-        <sys_id>seed0006000000000000000000000010</sys_id>
+        <sys_id/>
         <scenario display_value="Create a new Incident and verify submission">seed0005000000000000000000000003</scenario>
         <order>3</order><keyword>And</keyword>
         <step_text>I fill in Short Description with "Automated test — Playwright incident creation"</step_text>
@@ -516,7 +516,7 @@
         <sys_update_name>x_146833_playwri_0_pw_scenario_step_seed_003_003</sys_update_name>
     </x_146833_playwri_0_pw_scenario_step>
     <x_146833_playwri_0_pw_scenario_step action="INSERT_OR_UPDATE">
-        <sys_id>seed0006000000000000000000000011</sys_id>
+        <sys_id/>
         <scenario display_value="Create a new Incident and verify submission">seed0005000000000000000000000003</scenario>
         <order>4</order><keyword>And</keyword>
         <step_text>I set Urgency to "2" (Medium)</step_text>
@@ -527,7 +527,7 @@
         <sys_update_name>x_146833_playwri_0_pw_scenario_step_seed_003_004</sys_update_name>
     </x_146833_playwri_0_pw_scenario_step>
     <x_146833_playwri_0_pw_scenario_step action="INSERT_OR_UPDATE">
-        <sys_id>seed0006000000000000000000000012</sys_id>
+        <sys_id/>
         <scenario display_value="Create a new Incident and verify submission">seed0005000000000000000000000003</scenario>
         <order>5</order><keyword>And</keyword>
         <step_text>I submit the Incident form</step_text>
@@ -538,7 +538,7 @@
         <sys_update_name>x_146833_playwri_0_pw_scenario_step_seed_003_005</sys_update_name>
     </x_146833_playwri_0_pw_scenario_step>
     <x_146833_playwri_0_pw_scenario_step action="INSERT_OR_UPDATE">
-        <sys_id>seed0006000000000000000000000013</sys_id>
+        <sys_id/>
         <scenario display_value="Create a new Incident and verify submission">seed0005000000000000000000000003</scenario>
         <order>6</order><keyword>Then</keyword>
         <step_text>the URL should not contain sys_id=-1</step_text>
@@ -549,7 +549,7 @@
         <sys_update_name>x_146833_playwri_0_pw_scenario_step_seed_003_006</sys_update_name>
     </x_146833_playwri_0_pw_scenario_step>
     <x_146833_playwri_0_pw_scenario_step action="INSERT_OR_UPDATE">
-        <sys_id>seed0006000000000000000000000014</sys_id>
+        <sys_id/>
         <scenario display_value="Create a new Incident and verify submission">seed0005000000000000000000000003</scenario>
         <order>7</order><keyword>And</keyword>
         <step_text>the Short Description field should contain "Automated test — Playwright incident creation"</step_text>
@@ -560,7 +560,7 @@
         <sys_update_name>x_146833_playwri_0_pw_scenario_step_seed_003_007</sys_update_name>
     </x_146833_playwri_0_pw_scenario_step>
     <x_146833_playwri_0_pw_scenario_step action="INSERT_OR_UPDATE">
-        <sys_id>seed0006000000000000000000000015</sys_id>
+        <sys_id/>
         <scenario display_value="Create a new Incident and verify submission">seed0005000000000000000000000003</scenario>
         <order>8</order><keyword>And</keyword>
         <step_text>the Urgency field should have value "2"</step_text>
@@ -578,7 +578,7 @@
          ════════════════════════════════════════════════════ -->
 
     <x_146833_playwri_0_pw_feature action="INSERT_OR_UPDATE">
-        <sys_id>seed0003000000000000000000000003</sys_id>
+        <sys_id/>
         <title>Service Operations Workspace</title>
         <description>Navigate to and verify the Service Operations Workspace (SOW) loads correctly.</description>
         <tags>@sow</tags>
@@ -596,7 +596,7 @@
 
     <!-- Story 3.1 -->
     <x_146833_playwri_0_pw_story action="INSERT_OR_UPDATE">
-        <sys_id>seed0004000000000000000000000003</sys_id>
+        <sys_id/>
         <feature display_value="Service Operations Workspace">seed0003000000000000000000000003</feature>
         <title>Open the Service Operations Workspace</title>
         <as_a>a ServiceNow operator</as_a>
@@ -615,7 +615,7 @@
 
     <!-- Scenario 3.1 -->
     <x_146833_playwri_0_pw_scenario action="INSERT_OR_UPDATE">
-        <sys_id>seed0005000000000000000000000004</sys_id>
+        <sys_id/>
         <story display_value="Open the Service Operations Workspace">seed0004000000000000000000000003</story>
         <feature display_value="Service Operations Workspace">seed0003000000000000000000000003</feature>
         <title>Navigate to and open the Service Operations Workspace</title>
@@ -635,7 +635,7 @@
 
     <!-- Steps for Scenario 3.1 -->
     <x_146833_playwri_0_pw_scenario_step action="INSERT_OR_UPDATE">
-        <sys_id>seed0006000000000000000000000016</sys_id>
+        <sys_id/>
         <scenario display_value="Navigate to and open the Service Operations Workspace">seed0005000000000000000000000004</scenario>
         <order>1</order><keyword>Given</keyword>
         <step_text>I am logged in to ServiceNow</step_text>
@@ -647,7 +647,7 @@
         <sys_update_name>x_146833_playwri_0_pw_scenario_step_seed_004_001</sys_update_name>
     </x_146833_playwri_0_pw_scenario_step>
     <x_146833_playwri_0_pw_scenario_step action="INSERT_OR_UPDATE">
-        <sys_id>seed0006000000000000000000000017</sys_id>
+        <sys_id/>
         <scenario display_value="Navigate to and open the Service Operations Workspace">seed0005000000000000000000000004</scenario>
         <order>2</order><keyword>And</keyword>
         <step_text>I am on the Next Experience home page</step_text>
@@ -659,7 +659,7 @@
         <sys_update_name>x_146833_playwri_0_pw_scenario_step_seed_004_002</sys_update_name>
     </x_146833_playwri_0_pw_scenario_step>
     <x_146833_playwri_0_pw_scenario_step action="INSERT_OR_UPDATE">
-        <sys_id>seed0006000000000000000000000018</sys_id>
+        <sys_id/>
         <scenario display_value="Navigate to and open the Service Operations Workspace">seed0005000000000000000000000004</scenario>
         <order>3</order><keyword>When</keyword>
         <step_text>I open the Workspaces menu</step_text>
@@ -671,7 +671,7 @@
         <sys_update_name>x_146833_playwri_0_pw_scenario_step_seed_004_003</sys_update_name>
     </x_146833_playwri_0_pw_scenario_step>
     <x_146833_playwri_0_pw_scenario_step action="INSERT_OR_UPDATE">
-        <sys_id>seed0006000000000000000000000019</sys_id>
+        <sys_id/>
         <scenario display_value="Navigate to and open the Service Operations Workspace">seed0005000000000000000000000004</scenario>
         <order>4</order><keyword>And</keyword>
         <step_text>I open the Service Operations Workspace</step_text>
@@ -683,7 +683,7 @@
         <sys_update_name>x_146833_playwri_0_pw_scenario_step_seed_004_004</sys_update_name>
     </x_146833_playwri_0_pw_scenario_step>
     <x_146833_playwri_0_pw_scenario_step action="INSERT_OR_UPDATE">
-        <sys_id>seed0006000000000000000000000020</sys_id>
+        <sys_id/>
         <scenario display_value="Navigate to and open the Service Operations Workspace">seed0005000000000000000000000004</scenario>
         <order>5</order><keyword>Then</keyword>
         <step_text>the Service Operations Workspace should be loaded</step_text>
