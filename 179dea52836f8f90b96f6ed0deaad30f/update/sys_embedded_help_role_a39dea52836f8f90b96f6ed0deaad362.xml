@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>10</order>
+        <role display_value="x_146833_playwri_0.admin" name="x_146833_playwri_0.admin">2f9dea52836f8f90b96f6ed0deaad350</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-28 01:16:55</sys_created_on>
+        <sys_id>a39dea52836f8f90b96f6ed0deaad362</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>2f9dea52836f8f90b96f6ed0deaad350</sys_name>
+        <sys_package display_value="PlayWrightBuilder" source="x_146833_playwri_0">179dea52836f8f90b96f6ed0deaad30f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="PlayWrightBuilder">179dea52836f8f90b96f6ed0deaad30f</sys_scope>
+        <sys_update_name>sys_embedded_help_role_a39dea52836f8f90b96f6ed0deaad362</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-28 01:16:55</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>
